@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css">
+</head>
+<body>
+    
+    <header class="header">
+        <a href="#" id="logo">FlexLife</a>
+
+        <nav class="navbar">
+            <a href="#">Menu</a>
+            <a href="#">Classes</a>
+            <a href="#">Agendamento</a>
+        </nav>
+
+        <div class="icon">
+            <div id="menubar" class="fas fa-bars"></div>
+            <div id="user" class="fas fa-user"></div>
+            <div id="search" class="fas fa-search"></div>
+
+        </div>
+
+        <div class="search-form">
+            <div class="inner-form">
+                <input type="email" name="" id="" placeholder="Email">
+                <input type="password" name="" id="" placeholder="Senha">
+            </div>
+        </div>
+
+        <div class="searchbar">
+            <div class="inner-searchbar">
+                <input type="search" placeholder="pesquisar......">
+            </div>
+        </div>
+
+    </header>
+
+
+<div id="home" class="back">
+    <div class="mian-home">
+        <div class="inner-home">
+            <img src="images/for bg.png" alt="">
+        </div>
+
+        <div class="inner-home">
+            <div class="inner-content">
+                <h1>FlexLife</h1>
+                <p>Descubra o caminho para uma vida mais saudável, flexível e equilibrada com as técnicas revitalizantes do pilates, onde mente, corpo e espírito se encontram em perfeita harmonia.</p>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="our-classes">
+
+    <h1>Nossas Salas</h1>
+
+    <div class="main-class">
+        <div class="inner-class">
+            <img src="images/class2.png" alt="">
+            <div class="class-content">
+                <h2>Flexibilidade</h2>
+                <p>Uma sala equipada com acessórios tradicionais de pilates, como reformers e cadillacs, adequada para a prática de pilates clássico e funcional.</p>
+                
+            </div>
+        </div>
+
+        <div class="inner-class">
+            <img src="images/class3.png" alt="">
+            <div class="class-content">
+                <h2>Funcional</h2>
+                <p>Uma sala versátil com equipamentos variados, como bolas suíças, faixas de resistência e TRX, projetada para a prática de pilates funcional e exercícios de fortalecimento.</p>
+                
+            </div>
+        </div>
+
+        <div class="inner-class">
+            <img src="images/class1.png" alt="">
+            <div class="class-content">
+                <h2>Terapêutica</h2>
+                <p>Uma sala especializada equipada com acessórios de reabilitação, como barras de apoio e almofadas de apoio, destinada à prática de pilates terapêutico e tratamento de lesões.</p>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!-- Agendamento -->
+
+<div class="contact-us">
+    <div class="main-contact">
+        <div class="inner-contact">
+            <h1>Agendar</h1>
+            <div class="inner-form-contact">
+                <input type="text" id="nome" placeholder="Seu nome">
+               
+                <input type="tel" id="telefone" placeholder="Seu telefone">
+                <!--Seletor de sala-->
+                <label for="salas" class="salas">Escolha sua sala:</label>
+                <select name="selecionar" id="sala" class="selection">
+                    <option value="selecione" disabled selected>Selecione...</option>
+                    <option value="flexibilidade">Flexibilidade</option>
+                    <option value="funcional">Funcional</option>
+                    <option value="terapêutica">Terapêutica</option>
+            </select> <!--Fim do Seletor de sala-->
+            </div>
+            <!--Seletor de horário-->
+            <label class="horario">Escolha seu horário:</label>
+            <div class="seletor">
+                <div class="time-slot" data-time="09:00">09:00</div>
+                <div class="time-slot" data-time="11:30">11:30</div>
+                <div class="time-slot" data-time="14:00">14:00</div>
+                <div class="time-slot" data-time="16:30">16:30</div>
+                <div class="time-slot" data-time="19:00">19:00</div>
+                <div class="time-slot" data-time="21:30">21:30</div>
+            </div>
+
+            <form id="time-form" style="display: none;">
+                <input type="hidden" id="selected-item" name="selected-item">
+            </form>
+            <!--Fim do seletor de horário-->
+
+            <!--Botão para agendar-->
+            <button class="button" onclick="agendar()">
+                Agendar
+                <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+                  <path
+                    clip-rule="evenodd"
+                    d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                    fill-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+            <!--Fim do botão para agendar-->  
+        </div>
+
+        <div class="inner-contact">
+            <div id="agendamentos">
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
